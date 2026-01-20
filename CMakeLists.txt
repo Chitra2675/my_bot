@@ -38,3 +38,12 @@ install(
 )
 
 ament_package()
+
+install(DIRECTORY urdf/ DESTINATION share/${PROJECT_NAME}/urdf/)
+install(DIRECTORY launch/ DESTINATION share/${PROJECT_NAME}/launch/)
+install(DIRECTORY urdf/
+  DESTINATION share/${PROJECT_NAME}/urdf/
+)
+install(DIRECTORY launch/
+  DESTINATION share/${PROJECT_NAME}/launch/
+)
